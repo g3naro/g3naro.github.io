@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conócenos - Reparación de computadoras profesionales">
+    <title>Conócenos | GenSanEmi</title>
+    <style>
+        /* Reset global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo global */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #111c44; /* Azul oscuro */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #16213e; /* Azul fuerte */
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e94560; /* Rosa fuerte */
+        }
+
+        /* Sección de imágenes */
+        .image-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 250px; /* Ajustar la altura */
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Sección de información */
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 20px;
+        }
+
+        .info-text {
+            width: 45%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .info-text:hover {
+            background-color: #f1f1f1;
+        }
+
+        .info-text h2 {
+            font-size: 28px;
+            color: #111c44; /* Azul oscuro */
+            margin-bottom: 20px;
+        }
+
+        .info-text p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Mapa de ubicación */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #111c44; /* Azul oscuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        /* Efectos de fade-in */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Botón flotante */
+        .chatbot-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #e94560; /* Rosa fuerte */
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header con título -->
+    <header>
+        <h1>¡Conócenos!</h1>
+        <p>Somos especialistas en reparación de computadoras, ofreciendo servicios rápidos y profesionales.</p>
+    </header>
+        <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="Productos.html">Productos</a>
+        <a href="Servicios.html">Servicios</a>
+        <a href="Conocenos.html">Conócenos</a>
+        <a href="Paquetesemanal.html">Paquete Semanal</a>
+    </nav>
+
+    <!-- Galería de imágenes -->
+    <section class="image-gallery fade-in">
+        <div>
+            <img src="imagenes/WhatsApp Image 2025-02-20 at 4.31.52 PM (1).jpeg" alt="Reparación de Computadoras">
+        </div>
+        <div>
+            <img src="imagenes/WhatsApp Image 2025-02-20 at 4.31.52 PM (2).jpeg" alt="Reparación Profesional">
+        </div>
+        <div>
+            <img src="imagenes/WhatsApp Image 2025-02-20 at 4.31.52 PM.jpeg" alt="Atención al Cliente">
+        </div>
+    </section>
+
+    <!-- Información del local -->
+    <section class="info-section fade-in">
+        <div class="info-text">
+            <h2>Quiénes Somos</h2>
+            <p>En GenSanEmi ofrecemos soluciones rápidas y efectivas para tus equipos de computación. Nuestro equipo está capacitado para ayudarte con reparaciones, limpieza, instalación de software y más, siempre con atención profesional y confiable.</p>
+        </div>
+        <div class="info-text">
+            <h2>Servicios que Ofrecemos</h2>
+            <p>Ofrecemos servicios que van desde la reparación de computadoras hasta el mantenimiento y optimización de tus equipos. Nuestro objetivo es mejorar el rendimiento de tu computadora y mantenerla funcionando sin problemas. ¡Cuidamos que tu equipo siempre esté en excelente estado!</p>
+        </div>
+    </section>
+
+    <!-- Ubicación en Google Maps -->
+    <section class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.003868667702!2d-98.31616863260132!3d19.064601007317474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc97b8bcfe2ad%3A0xc85a3539875675e3!2sGSE%20TECNOCOM%20Reparaci%C3%B3n%20de%20Computadoras!5e0!3m2!1ses!2smx!4v1742346052152!5m2!1ses!2smx" width="1700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 GenSanEmi. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
