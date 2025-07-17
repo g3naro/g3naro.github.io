@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Productos - GenSanEmi</title>
+<style>
+  /* Estilos globales */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  header {
+    background-color: #111c44;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  }
+  nav {
+    background-color: #16213e;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #e94560;
+  }
+  /* Contenedor productos */
+  .product-container {
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+  }
+  .product-box {
+    background: white;
+    border: 2px solid #16213e;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  }
+  .product-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  .product-box img:hover {
+    transform: scale(1.05);
+  }
+  .product-box h3 {
+    color: #111c44;
+    margin-bottom: 10px;
+  }
+  .product-box p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+    min-height: 48px; /* para alinear botones */
+  }
+  .product-box button {
+    background-color: #e94560;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .product-box button:hover {
+    background-color: #b83b5e;
+  }
+  /* Footer */
+  footer {
+    background: #111c44;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+
+<header>GenSanEmi - Nuestros Productos</header>
+
+        <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="Productos.html">Productos</a>
+        <a href="Servicios.html">Servicios</a>
+        <a href="Conocenos.html">Conócenos</a>
+        <a href="Paquetesemanal.html">Paquete Semanal</a>
+    </nav>
+
+<section class="product-container">
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=Laptop+Alpha+Pro+500" alt="Laptop Alpha Pro 500" />
+    <h3>Alpha Pro 500</h3>
+    <p>Rendimiento extremo para gaming y diseño.</p>
+    <button onclick="showDescription('Laptop Alpha Pro 500: Potente equipo ideal para juegos y diseño gráfico.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=NovaBook+Elite" alt="NovaBook Elite" />
+    <h3>NovaBook Elite</h3>
+    <p>Portabilidad y potencia en un solo dispositivo.</p>
+    <button onclick="showDescription('NovaBook Elite: Liviana y potente, perfecta para trabajo móvil.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=Titan+Workstation+Z7" alt="Titan Workstation Z7" />
+    <h3>Titan Workstation Z7</h3>
+    <p>Para creadores de contenido y edición 3D.</p>
+    <button onclick="showDescription('Titan Workstation Z7: Estación de trabajo potente para edición y 3D.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=Striker+X1" alt="Striker X1" />
+    <h3>Striker X1</h3>
+    <p>Diseñada para eSports y alto rendimiento.</p>
+    <button onclick="showDescription('Striker X1: Equipo optimizado para juegos competitivos y eSports.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=CyberNova+15" alt="CyberNova 15" />
+    <h3>CyberNova 15</h3>
+    <p>Ultraligera y con batería de larga duración.</p>
+    <button onclick="showDescription('CyberNova 15: Laptop ligera con gran autonomía para todo el día.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=Omega+X3" alt="Omega X3" />
+    <h3>Omega X3</h3>
+    <p>Potencia y velocidad para profesionales.</p>
+    <button onclick="showDescription('Omega X3: Rendimiento alto para tareas profesionales exigentes.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=Fusion+Max" alt="Fusion Max" />
+    <h3>Fusion Max</h3>
+    <p>Equipo balanceado para uso diario y multitarea.</p>
+    <button onclick="showDescription('Fusion Max: Ideal para uso diario con buen equilibrio entre potencia y eficiencia.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=Vortex+Pro" alt="Vortex Pro" />
+    <h3>Vortex Pro</h3>
+    <p>Diseño innovador con sistema de enfriamiento avanzado.</p>
+    <button onclick="showDescription('Vortex Pro: Innovador sistema de enfriamiento para largas sesiones de trabajo.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=Edge+360" alt="Edge 360" />
+    <h3>Edge 360</h3>
+    <p>Experiencia inmersiva para juegos y multimedia.</p>
+    <button onclick="showDescription('Edge 360: Pantalla curva para mayor inmersión en juegos y videos.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=NeoCore+X" alt="NeoCore X" />
+    <h3>NeoCore X</h3>
+    <p>La mejor opción para desarrolladores y programadores.</p>
+    <button onclick="showDescription('NeoCore X: Equipo potente y confiable para desarrolladores.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=Zenith+V12" alt="Zenith V12" />
+    <h3>Zenith V12</h3>
+    <p>Alta performance con diseño compacto.</p>
+    <button onclick="showDescription('Zenith V12: Rendimiento superior en tamaño compacto.')">Ver más</button>
+  </div>
+  <div class="product-box">
+    <img src="https://via.placeholder.com/350x180?text=Quantum+Blade" alt="Quantum Blade" />
+    <h3>Quantum Blade</h3>
+    <p>Potente y elegante para usuarios exigentes.</p>
+    <button onclick="showDescription('Quantum Blade: Equipo con diseño elegante y alto rendimiento.')">Ver más</button>
+  </div>
+</section>
+
+<footer>&copy; 2025 GenSanEmi. Todos los derechos reservados.</footer>
+
+<script>
+  function showDescription(text) {
+    alert(text);
+  }
+</script>
+
+</body>
+</html>
+
